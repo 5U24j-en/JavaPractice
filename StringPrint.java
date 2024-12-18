@@ -40,6 +40,41 @@ public class StringPrint {
     System.out.println(str6);
     System.out.println(str3.equals(str6));
     System.out.println(str3.equalsIgnoreCase(str6));
+    /* str1==str2 will check if references are equal not the string itself */
+    System.err.println("Printing and practising regular expressions");
+    String str7="abcdef1";
+    String str8="abbccdddaa";
+    String str9="abcDefgh";
+    String str10="abcdEEE123";
+    String str11="";
+    System.err.println(str7.matches(".*"));
+    System.err.println(str7.matches("[abc]*"));
+    System.err.println(str8.matches("[abcd]*"));
+    System.err.println(str9.matches("[a-z]*"));
+    System.err.println(str8.matches("[a-z]*"));
+    System.out.println(str11.matches("[abc]*"));
+    System.out.println(str11.matches("[abc]+"));
+    System.out.println(str10.matches("[a-zA-Z0-9]*"));
+
+    System.out.println("To check if the string is gmail account");
+    String str12="John@gmail.com";
+    System.out.println(str12.matches("\\w*@gmail(.*)"));
+
+    /* Student Challenge */
+
+    System.out.println("To check if string is a email id or not using Java Methods: ");
+    String str13="programmer@gmail.com";
+    int a=str13.indexOf("@");
+    System.out.println(a);
+    String sub1=str13.substring(0,10);
+    int l=str13.length();
+    System.out.println(l);
+    String sub2=str13.substring(a+1, l);
+    System.out.println("Username = "+sub1);
+    System.out.println("Domain name = "+sub2);
+    System.out.println("Is the email gamil account? : "+sub2.matches("[gmail.com]+"));
+    
+    
     }
     
 
