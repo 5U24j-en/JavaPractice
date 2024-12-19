@@ -72,8 +72,23 @@ public class StringPrint {
     String sub2=str13.substring(a+1, l);
     System.out.println("Username = "+sub1);
     System.out.println("Domain name = "+sub2);
-    System.out.println("Is the email gamil account? : "+sub2.matches("[gmail.com]+"));
-    
+    System.out.println("Is the email gamil a account? : "+sub2.matches("[gmail.com]+"));
+    /* Checking if the number is binary or not */
+
+    int b=10110111;
+    String str14=b+"";
+    System.out.println(str14.matches("[10]*"));
+
+    /*Replacing Special Characters from string*/
+    String str15="  a!B@c#123ab%%%  f%  ";
+    System.out.println(str15);
+    System.out.println(str15.replaceAll("\\W", "").trim());
+
+    /*To check number of words in String*/
+
+    String str16="My name is diablo";
+    String words[]=str16.split("\\s");
+    System.out.println(words.length);
     
     }
     
