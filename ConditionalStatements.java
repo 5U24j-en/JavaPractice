@@ -61,7 +61,7 @@ public class ConditionalStatements
             }
         }
         else{
-            System.out.println("Invalid URL");
+            System.out.println("Invalid URL. Enter complete Website");
         }
         
         /* To check the radix (bases) of given string */
