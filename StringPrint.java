@@ -66,7 +66,7 @@ public class StringPrint {
     String str13="programmer@gmail.com";
     int a=str13.indexOf("@");
     System.out.println(a);
-    String sub1=str13.substring(0,10);
+    String sub1=str13.substring(0,a);
     int l=str13.length();
     System.out.println(l);
     String sub2=str13.substring(a+1, l);

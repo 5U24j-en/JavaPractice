@@ -26,6 +26,7 @@ public class Loops {
             l=l+1;
         }
         System.out.println("End of this stage +++++++++++++++++++++++++++++++++++++++++++++++");
+        
         /* Factorial */
         
         System.out.println("Enter the number to find the factorial: ");
@@ -40,19 +41,23 @@ public class Loops {
         
         /* Displaying Digits and counting the digits in a number and checking if the number is Armstrong or not */
 
-        int num, digit,a=10,count=0,armstrong=0,temp;
+        int num, digit,a=10,count=0,armstrong=0,temp,rev=0;
         System.out.println("Enter the Number to find Digits: ");
         num=sc.nextInt();
         temp=num;
         while(temp>0)
         {
-            
+            /* Finding and counting the Digits */
             digit=temp%10;
             System.out.println("The Digits at "+a +"s place is:  "+digit);
             a=a*10;
             temp=temp/10;
             count=count+1;
-            
+
+            /* Reversing Number */
+            rev=rev*10+digit;
+
+            /*Armstrong */
             armstrong=armstrong+(digit*digit*digit);
 
         }
@@ -65,6 +70,14 @@ public class Loops {
         {
             System.out.println("Not an Armstrong Number: "+ armstrong);
         }
+        if(rev==num)
+        {
+            System.out.println("The number is a palindrome: "+rev);
+        }
+        else{
+            System.out.println("The number is not a palindrome: "+rev);
+        }
+        
             
         
 
